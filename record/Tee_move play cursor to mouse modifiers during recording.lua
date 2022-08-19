@@ -1,8 +1,8 @@
 -- @description Move play cursor to mouse modifiers during recording
 -- @author Tee
--- @version 1.0
+-- @version 1.01
 -- @changelog
---   Init
+--   Fix bugs
 -- @about
 --  # Move play cursor to mouse cursor and continue recording
 --
@@ -24,16 +24,18 @@ end
 
 local lang = os.getenv("LANG")
 
-if (startswith(lang, "zh_CN")) then
-    title1 = "缺失 SWS 扩展"
-    msg1 = "去 https://www.sws-extension.org/ 安装"
-    title2 = "操作错误"
-    msg2 = "本脚本只能用在 Ruler 或 MIDI ruler 的 mouse modifiers 里"
-else
-    title1 = "miss SWS extension"
-    msg1 = "Go https://www.sws-extension.org/ and install it"
-    title2 = "ERROR"
-    msg2 = "This script only use in Ruler or MIDI ruler in mouse modifiers"
+title1 = "缺失 SWS 扩展"
+msg1 = "去 https://www.sws-extension.org/ 安装"
+title2 = "操作错误"
+msg2 = "本脚本只能用在 Ruler 或 MIDI ruler 的 mouse modifiers 里"
+
+if (type(lang) ~= "nil") then
+    if (startswith(lang, "zh_CN") == "nil") then
+        title1 = "miss SWS extension"
+        msg1 = "Go https://www.sws-extension.org/ and install it"
+        title2 = "ERROR"
+        msg2 = "This script only use in Ruler or MIDI ruler in mouse modifiers"
+    end
 end
 
 reaper.PreventUIRefresh(1)
