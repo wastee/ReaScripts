@@ -25,11 +25,19 @@ end
 local lang = os.getenv("LANG")
 
 if (startswith(lang, "zh_CN")) then
-    title = "操作错误"
-    msg = "本脚本只能用在 Ruler 或 MIDI ruler 的 mouse modifiers 里"
+    title1 = "缺失 SWS 扩展"
+    msg1 = "去 https://www.sws-extension.org/ 安装"
+    title2 = "操作错误"
+    msg2 = "本脚本只能用在 Ruler 或 MIDI ruler 的 mouse modifiers 里"
 else
-    title = "ERROR"
-    msg = "This script only use in Ruler or MIDI ruler in mouse modifiers"
+    title1 = "miss SWS extension"
+    msg1 = "Go https://www.sws-extension.org/ and install it"
+    title2 = "ERROR"
+    msg2 = "This script only use in Ruler or MIDI ruler in mouse modifiers"
+end
+
+if (reaper.APIExists("BR_GetMouseCursorContext") == false) then
+    reaper.ShowMessageBox(msg1, title1, 0)
 end
 
 local function move_cursor_to_mouse()
@@ -40,7 +48,7 @@ local function move_cursor_to_mouse()
     elseif (window == "ruler") then
         reaper.Main_OnCommand(40513, 0) -- move cursor to mouse
     else
-        reaper.ShowMessageBox(msg, title, 0)
+        reaper.ShowMessageBox(msg2, title2, 0)
     end
 end
 
