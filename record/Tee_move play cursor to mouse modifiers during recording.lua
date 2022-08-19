@@ -18,6 +18,15 @@ function print(text)
     reaper.ShowConsoleMsg(tostring(text))
 end
 
+function move_cursor_to_mouse()
+    if (window == "midi_editor") then
+        hwnd_focus = reaper.BR_Win32_GetFocus()
+        reaper.MIDIEditor_OnCommand(hwnd_focus, 40443) -- move cursor to mouse
+    elseif (window == "arrange") then
+        reaper.Main_OnCommand(40513, 0) -- move cursor to mouse
+    end
+end
+
 local project_status = reaper.GetAllProjectPlayStates(0)
 
 window, segment, details = reaper.BR_GetMouseCursorContext()
@@ -27,11 +36,8 @@ window, segment, details = reaper.BR_GetMouseCursorContext()
 
 if (project_status == 5) or (project_status == 6) then
     reaper.Main_OnCommand(40667, 0) -- Transport: Stop (save all recorded media)
-    if (window == "midi_editor") then
-        hwnd_focus = reaper.BR_Win32_GetFocus()
-        reaper.MIDIEditor_OnCommand(hwnd_focus, 40443) -- move cursor to mouse
-    elseif (window == "arrange") then
-        reaper.Main_OnCommand(40513, 0) -- move cursor to mouse
-    end
+    move_cursor_to_mouse()
     reaper.Main_OnCommand(1013, 0) -- Transport: Record
+else
+    move_cursor_to_mouse()
 end
