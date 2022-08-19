@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="6438ba976361242062a34a4d40ccbd24d01927f1" name="Tee Scripts">
+<index version="1" commit="d3d665decac494fee758415b407d63280a539b46" name="Tee Scripts">
   <category name="record">
     <reapack name="Tee_move play cursor to mouse modifiers during recording.lua" type="script" desc="Move play cursor to mouse modifiers during recording">
       <metadata>
@@ -15,7 +15,7 @@
       </metadata>
       <version name="1.0" author="Tee" time="2022-08-19T02:08:23Z">
         <changelog><![CDATA[Init]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/wastee/ReaScripts/raw/6438ba976361242062a34a4d40ccbd24d01927f1/record/Tee_move%20play%20cursor%20to%20mouse%20modifiers%20during%20recording.lua</source>
+        <source main="main midi_editor">https://github.com/wastee/ReaScripts/raw/d3d665decac494fee758415b407d63280a539b46/record/Tee_move%20play%20cursor%20to%20mouse%20modifiers%20during%20recording.lua</source>
       </version>
     </reapack>
   </category>
