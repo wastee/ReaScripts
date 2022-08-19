@@ -23,9 +23,17 @@ reaper.PreventUIRefresh(1)
 local project_status = reaper.GetAllProjectPlayStates(0)
 
 if (project_status == 5) or (project_status == 6) then
+    local position = reaper.GetCursorPosition() -- Get origianl cursor position
+
     reaper.Main_OnCommand(40434, 0) -- View: Move edit cursor to play cursor
     reaper.Main_OnCommand(40667, 0) -- Transport: Stop (save all recorded media)
     reaper.Main_OnCommand(41041, 0) -- Move edit cursor to start of current measure
+
+    local retval, measures, cml, fullbeats, cdenom = reaper.TimeMap2_timeToBeats(0, position)
+    if (fullbeats % cml == 0) then -- If cursor position is already at start of measure at first
+        reaper.Main_OnCommand(41041, 0) -- Move edit cursor to start of current measure
+    end
+
     reaper.Main_OnCommand(1013, 0) -- Transport: Record
 else
     reaper.Main_OnCommand(41041, 0) -- Move edit cursor to start of current measure
