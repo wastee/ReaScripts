@@ -24,13 +24,14 @@ local project_status = reaper.GetAllProjectPlayStates(0)
 
 if (project_status == 5) or (project_status == 6) then
     local position = reaper.GetCursorPosition() -- Get origianl cursor position
-
     reaper.Main_OnCommand(40434, 0) -- View: Move edit cursor to play cursor
+    local position2 = reaper.GetCursorPosition() -- Get play cursor position
     reaper.Main_OnCommand(40667, 0) -- Transport: Stop (save all recorded media)
     reaper.Main_OnCommand(41041, 0) -- Move edit cursor to start of current measure
 
     local retval, measures, cml, fullbeats, cdenom = reaper.TimeMap2_timeToBeats(0, position)
-    if (fullbeats % cml == 0) then -- If cursor position is already at start of measure at first
+    local retval2, measures2, cml2, fullbeats2, cdenom2 = reaper.TimeMap2_timeToBeats(0, position2)
+    if (fullbeats % cml == 0 and measures == measures2) then -- If cursor position is already at start of measure at first
         reaper.Main_OnCommand(41041, 0) -- Move edit cursor to start of current measure
     end
 
