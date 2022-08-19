@@ -7,7 +7,7 @@
 --  # Move play cursor to mouse cursor and continue recording
 --
 --  This script is use in mouse modifiers.
--- @provides [main=main,midi_editor,midi_inlineeditor] .
+-- @provides [main=main,midi_editor] .
 -- @link
 --   https://forum.reaget.com/t/topic/2736
 --
