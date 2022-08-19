@@ -9,7 +9,7 @@
 --  This script is use in mouse modifiers.
 -- @provides [main=main,midi_editor] .
 -- @link
---   https://forum.reaget.com/t/topic/2736
+--   https://forum.reaget.com/t/topic/2740
 --
 
 -----------------------------------------------------------------------------------------------

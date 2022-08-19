@@ -9,7 +9,7 @@
 --  This script is in Main window. Please pass through key to main window if you want to use in MIDI editor.
 -- @provides [main=main] .
 -- @link
---   https://forum.reaget.com/t/topic/2736
+--   https://forum.reaget.com/t/topic/2740
 --
 
 -----------------------------------------------------------------------------------------------
