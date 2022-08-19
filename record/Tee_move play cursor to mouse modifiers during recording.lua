@@ -34,7 +34,7 @@ end
 
 local function move_cursor_to_mouse()
     window, segment, details = reaper.BR_GetMouseCursorContext()
-    if (window == "midi_editor") then
+    if (window == "midi_editor" and segment == "ruler") then
         hwnd_focus = reaper.BR_Win32_GetFocus()
         reaper.MIDIEditor_OnCommand(hwnd_focus, 40443) -- move cursor to mouse
     elseif (window == "ruler") then
