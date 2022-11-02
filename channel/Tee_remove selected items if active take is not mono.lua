@@ -1,13 +1,13 @@
 -- @description Remove selected items if active take is not mono
 -- @author Tee
--- @version 1
+-- @version 1.01
 -- @changelog
---   init
+--   fix provides
 -- @about
 --  # Remove selected items if active take is not mono
 --
 --  This script is use in mouse modifiers.
--- @provides [main=main,midi_editor] .
+-- @provides [main=main] .
 -- @link
 --   https://forum.reaget.com/
 
