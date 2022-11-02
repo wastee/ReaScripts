@@ -1,6 +1,6 @@
 -- @description Remove selected items if active take is not mono
 -- @author Tee
--- @version pre0.9
+-- @version 0.9
 -- @changelog
 --   init
 -- @about
