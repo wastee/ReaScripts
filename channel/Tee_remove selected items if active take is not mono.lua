@@ -30,7 +30,7 @@ for i = 0, item_cnt - 1 do
     local track = reaper.GetMediaItemTrack(item)
     local take = reaper.GetActiveTake(item)
     local chans_mode = reaper.GetMediaItemTakeInfo_Value(take, "I_CHANMODE")
-    if (chans_mode == 0 and chans_mode == 1) then
+    if (chans_mode == 0 or chans_mode == 1) then
         del_table[item] = track
     end
 end
