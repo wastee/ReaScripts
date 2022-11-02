@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="786605a053021086f60a7743aa0a648c14c92f7c" name="Tee Scripts">
+<index version="1" commit="689eb223cef985bc1db4c677d568ac1824e6abb5" name="Tee Scripts">
+  <category name="channel">
+    <reapack name="Tee_remove selected items if active take is not mono.lua" type="script" desc="Remove selected items if active take is not mono">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Remove selected items if active take is not mono\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script is use in mouse modifiers.\par}
+}
+]]></description>
+        <link rel="website">https://forum.reaget.com/</link>
+      </metadata>
+      <version name="0.9" author="Tee" time="2022-11-02T08:32:46Z">
+        <changelog><![CDATA[init]]></changelog>
+        <source main="main midi_editor">https://github.com/wastee/ReaScripts/raw/689eb223cef985bc1db4c677d568ac1824e6abb5/channel/Tee_remove%20selected%20items%20if%20active%20take%20is%20not%20mono.lua</source>
+      </version>
+    </reapack>
+  </category>
   <category name="record">
     <reapack name="Tee_move play cursor to mouse modifiers during recording.lua" type="script" desc="Move play cursor to mouse modifiers during recording">
       <metadata>
