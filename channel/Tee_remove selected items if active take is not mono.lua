@@ -1,10 +1,11 @@
 -- @description Remove selected items if active take is not mono
 -- @author Tee
--- @version 1.02
+-- @version 1.03
 -- @changelog
 --   version 1: init
 --   version 1.01: fix provides
 --   version 1.02: fix delete logic
+--   version 1.03: fix stupid error
 -- @about
 --  # Remove selected items if active take is not mono
 --
