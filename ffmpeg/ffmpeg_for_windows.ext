@@ -1,0 +1,20 @@
+@description FFmpeg for Windows
+@version 4.4.1
+@author FFmpeg team
+@about
+  # FFmpeg v4.4.1
+  Only necessary files. Only Windows.
+@changelog
+  - The last version of FFmpeg that REAPER supports.
+@provides
+   [windows] avcodec-58.dll https://github.com/wastee/ReaScripts/releases/download/v$version/avcodec-58.dll
+   [windows] avdevice-58.dll https://github.com/wastee/ReaScripts/releases/download/v$version/avdevice-58.dll
+   [windows] avfilter-7.dll https://github.com/wastee/ReaScripts/releases/download/v$version/avfilter-7.dll
+   [windows] avformat-58.dll https://github.com/wastee/ReaScripts/releases/download/v$version/avformat-58.dll
+   [windows] avutil-56.dll https://github.com/wastee/ReaScripts/releases/download/v$version/avutil-56.dll
+   [windows] ffmpeg.exe https://github.com/wastee/ReaScripts/releases/download/v$version/ffmpeg.exe
+   [windows] ffplay.exe https://github.com/wastee/ReaScripts/releases/download/v$version/ffplay.exe
+   [windows] ffprobe.exe https://github.com/wastee/ReaScripts/releases/download/v$version/ffprobe.exe
+   [windows] postproc-55.dll https://github.com/wastee/ReaScripts/releases/download/v$version/postproc-55.dll
+   [windows] swresample-3.dll https://github.com/wastee/ReaScripts/releases/download/v$version/swresample-3.dll
+   [windows] swscale-5.dll https://github.com/wastee/ReaScripts/releases/download/v$version/swscale-5.dll
