@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="8e5954876e88307addcfb687ac66e2a2f8c1715c" name="Tee Scripts">
+<index version="1" commit="0b7736871bf4376517fb869e467fd2f689796575" name="Tee Scripts">
   <category name="channel">
     <reapack name="Tee_remove selected items if active take is not mono.lua" type="script" desc="Remove selected items if active take is not mono">
       <metadata>
@@ -41,14 +41,14 @@ version 1.03: fix stupid error]]></changelog>
     </reapack>
   </category>
   <category name="ffmpeg">
-    <reapack name="ffmpeg_for_windows.ext" type="extension" desc="FFmpeg for Windows">
+    <reapack name="ffmpeg_for_windows.ext" type="extension" desc="FFmpeg 8 series for Windows">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 FFmpeg v4.4.1\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Only necessary files. Only Windows.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 FFmpeg v8.1\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Only REAPER v7.66 above. Only necessary files. Only Windows.\par}
 }
 ]]></description>
       </metadata>
@@ -65,6 +65,19 @@ version 1.03: fix stupid error]]></changelog>
         <source platform="windows" file="postproc-55.dll">https://github.com/wastee/ReaScripts/releases/download/v4.4.1/postproc-55.dll</source>
         <source platform="windows" file="swresample-3.dll">https://github.com/wastee/ReaScripts/releases/download/v4.4.1/swresample-3.dll</source>
         <source platform="windows" file="swscale-5.dll">https://github.com/wastee/ReaScripts/releases/download/v4.4.1/swscale-5.dll</source>
+      </version>
+      <version name="8.1" author="FFmpeg team" time="2026-03-19T05:21:35Z">
+        <changelog><![CDATA[- The last version of FFmpeg that REAPER supports. Only REAPER v7.66 above.]]></changelog>
+        <source platform="windows" file="avcodec-62.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/avcodec-62.dll</source>
+        <source platform="windows" file="avdevice-62.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/avdevice-62.dll</source>
+        <source platform="windows" file="avfilter-11.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/avfilter-11.dll</source>
+        <source platform="windows" file="avformat-62.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/avformat-62.dll</source>
+        <source platform="windows" file="avutil-60.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/avutil-60.dll</source>
+        <source platform="windows" file="ffmpeg.exe">https://github.com/wastee/ReaScripts/releases/download/v8.1/ffmpeg.exe</source>
+        <source platform="windows" file="ffplay.exe">https://github.com/wastee/ReaScripts/releases/download/v8.1/ffplay.exe</source>
+        <source platform="windows" file="ffprobe.exe">https://github.com/wastee/ReaScripts/releases/download/v8.1/ffprobe.exe</source>
+        <source platform="windows" file="swresample-6.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/swresample-6.dll</source>
+        <source platform="windows" file="swscale-9.dll">https://github.com/wastee/ReaScripts/releases/download/v8.1/swscale-9.dll</source>
       </version>
     </reapack>
   </category>
